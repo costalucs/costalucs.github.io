@@ -11,6 +11,45 @@
       * {
         text-decoration: none;
       }
+      body {
+        background-color: #7C7287;
+      }
+
+      .titulo {
+        font-family: sans-serif;
+      }
+      .descri {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .infos {
+        background-color: #9DC0BC;
+        border-radius: 25px;
+        padding: 20px;
+      }
+
+      .container-foto {
+        align-items: center;
+        text-align: center;
+      }
+      .lista {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: #9dc0bc;
+        width: 50%;
+        border-radius: 20px;
+        padding: 20px;
+        align-content: center;
+      }
+      a:hover {
+        background-color: #B2EDC5;
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.5s;
+      }
       p {
         text-align: justify;
       }
@@ -24,7 +63,7 @@
     </style>
   </head>
   <body>
-    <ul>
+    <ul class="lista">
       <li><a href="#about">Sobre</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#links">Links</a></li>
@@ -40,8 +79,9 @@
       />
     </div>
     <section class="infos" id="about">
-      <h1 style="text-align: center">Lucas de Souza Costa</h1>
-      <p style="text-align: justify">
+      <h1 class="titulo" style="text-align: center">Lucas de Souza Costa</h1>
+      <div class="descri">
+      <p  style="text-align: justify">
         Olá! Sou Lucas, tenho 25 anos de idade, sou de São Luís, MA. Estudante
         de Oceanografia e também estudo desenvolvimento web
         <em>(meu primeiro amor)</em>!
@@ -50,8 +90,10 @@
         Conheci a minha primeira linguagem de programação na faculdade,
         <strong>Fortran</strong>, estudando modelagem de sistemas.
       </p>
+      </div>
       <h2 id="habilidades" style="text-align: center">Habilidades</h2>
       <p>
+
         <ul>
           <li>Viciado em aprender. Motivada por conhecer algo novo sempre.</li>
           <li>Criativo</li>
